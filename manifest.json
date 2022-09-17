@@ -1,0 +1,9 @@
+{
+	"short_name": "Weather app",
+	"name": "A local and international weather forecast app ",
+
+	"start_url": ".",
+	"display": "standalone",
+	"theme_color": "#000000",
+	"background_color": "#ffffff"
+}
