@@ -28,7 +28,7 @@ const Weather = props => {
     }, []);
     const inputChangeHandler = async () => {
         if (cityName.current.value.trim() !== '') {
-            await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${cityName.current.value}&limit=5&appid=${apiKey}`, { method: 'GET' })
+            await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${cityName.current.value}&limit=5&appid=${apiKey}`, { method: 'GET' })
                 .then(res => res.json())
                 .then(data => {
                     setCities(data)
