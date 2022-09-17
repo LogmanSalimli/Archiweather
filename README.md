@@ -8,14 +8,14 @@ The application will automatically detect user's location and show current weath
 Search bar helps user to find almost every city in the world.
 
 ### Details and their units:
-Current & realfeel temperature: Celcius or Fahrenheit;
-Main weather condition: image and words;
-Wind direction and speed: m/s or mph;
-Pressure: hPa;
-Humidity: percentages;
-Cloudness: percentages;
-Visibility: km;
-Sunrise and sunset time: 24h clock based on user's timezone.
+- Current & realfeel temperature: Celcius or Fahrenheit;
+- Main weather condition: image and words;
+- Wind direction and speed: m/s or mph;
+- Pressure: hPa;
+- Humidity: percentages;
+- Cloudness: percentages;
+- Visibility: km;
+- Sunrise and sunset time: 24h clock based on user's timezone.
 
 ## Additional features
 
@@ -36,6 +36,6 @@ A button located in `header` bar will switch between `metric` ('Celcius', 'meter
 React, Redux, Redux toolkit, REST APIs, CSS modules.
 
 ## Contact Me
-E-mail: logman.salimli@gmail.com
-Phone: +994 55 482 4440
-LinkedIn: [Logman Salimli](https://linkedin.com/in/logman-salimli)
+- E-mail: logman.salimli@gmail.com
+- Phone: +994 55 482 4440
+- LinkedIn: [Logman Salimli](https://linkedin.com/in/logman-salimli)
