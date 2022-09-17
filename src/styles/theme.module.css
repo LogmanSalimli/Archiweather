@@ -1,0 +1,50 @@
+.theme,
+.units {
+	position: relative;
+	right: 0;
+	z-index: 2;
+	box-sizing: content-box;
+	border-radius: 17px;
+	border: 2px solid black;
+	width: 60px;
+	height: 30px;
+	padding: 0 5px;
+	margin-block: 10px;
+	background-color: lightgray;
+	cursor: pointer;
+	transition-duration: 200ms;
+	-webkit-tap-highlight-color: transparent;
+}
+.units span {
+	display: inline-block;
+}
+.units .selector.imperial {
+	left: 41px;
+}
+.theme svg[id="sun"] {
+	display: inline-block;
+	position: relative;
+	left: -6px;
+	top: 1.5px;
+	color: orange;
+}
+.theme svg[id="moon"] {
+	display: inline-block;
+	color: white;
+	position: relative;
+	top: 1.5px;
+	left: 1px;
+}
+.theme svg[id="selector"],
+.units .selector {
+	display: inline-block;
+	position: absolute;
+	z-index: 3;
+	left: 4px;
+	top: 3px;
+	transition-duration: 200ms;
+}
+.theme.dark svg[id="selector"] {
+	color: black;
+	left: 41px;
+}
