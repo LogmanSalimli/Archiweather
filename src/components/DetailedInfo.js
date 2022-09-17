@@ -23,7 +23,7 @@ const DetailedInfo = props => {
                 {props.data && <h2>{props.data.name}</h2>}
                 {
                     props.data && <div className={classes.icon}>
-                        <img src={`http://openweathermap.org/img/wn/${props.data.weather[0].icon}@2x.png`} alt={props.data.weather.main}
+                        <img src={`https://openweathermap.org/img/wn/${props.data.weather[0].icon}@2x.png`} alt={props.data.weather.main}
                         />
                     </div >
                 }
