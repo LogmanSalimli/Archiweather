@@ -12,7 +12,11 @@ const DetailedInfo = props => {
     const windSpeed = isMetric ? props.data.wind.speed : props.data.wind.speed * 2.237;
 
     const sunrise = new Date(props.data.sys.sunrise * 1000);
+    const sunriseHours = sunrise.getHours();
+    const sunriseMinutes = sunrise.getMinutes();
     const sunset = new Date(props.data.sys.sunset * 1000);
+    const sunsetHours = sunset.getHours();
+    const sunsetMinutes = sunset.getMinutes();
 
     const timezoneOffset = sunrise.getTimezoneOffset();
     const timezone = timezoneOffset === 0 ? 'GMT' : timezoneOffset < 0 ? 'GMT+' + timezoneOffset / (-60) : 'GMT-' + timezoneOffset / (-60)
@@ -45,8 +49,8 @@ const DetailedInfo = props => {
                 </div>
                 <div className={classes.tableGroup}>
                     <div className={classes.data}><Piece>Visibility: {props.data.visibility / 1000}km</Piece></div>
-                    <div className={classes.data}><Piece>Sunrise: {`${sunrise.getHours()}:${sunrise.getMinutes()} ${timezone}`}</Piece></div>
-                    <div className={classes.data}><Piece>Sunset: {`${sunset.getHours()}:${sunset.getMinutes()} ${timezone}`}</Piece></div>
+                    <div className={classes.data}><Piece>Sunrise: {`${sunriseHours < 10 ? 0 : ''}${sunriseHours}:${sunriseMinutes < 10 ? 0 : ''}${sunriseMinutes} ${timezone}`}</Piece></div>
+                    <div className={classes.data}><Piece>Sunset: {`${sunsetHours < 10 ? 0 : ''}${sunsetHours}:${sunsetMinutes < 10 ? 0 : ''}${sunsetMinutes} ${timezone}`}</Piece></div>
                 </div>
             </div>
         </>
