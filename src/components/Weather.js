@@ -90,7 +90,7 @@ const Weather = props => {
 
             {weatherDetails && weatherDetails.cod === 200 && <DetailedInfo
                 data={weatherDetails} />}
-            {!weatherDetails && <img className={classes.spinner} src={spinner} />}
+            {!weatherDetails && <img alt='current condition' className={classes.spinner} src={spinner} />}
             {weatherDetails && weatherDetails.cod !== 200 && <p className={classes.error}>{weatherDetails.message}</p>}
         </main>
     )
