@@ -60,27 +60,19 @@ const Weather = props => {
     }
 
     const list = cities && cities.map(city => <li
-        onClick={function () {
-            selectionHandler(city)
-        }}
+        onClick={selectionHandler.bind(selectionHandler, city)}
         key={Math.random()}>{city.name}, {city.country}</li>)
 
     const inputFocusHandler = () => {
         setInputState(true);
     }
     const inputBlurHandler = (e) => {
-        const path = e.path || e.composedPath
-        console.log(path)
-        if (path) {
-            if (e.target !== cityName.current && path[1] !== cityList) {
-                setInputState(false)
-            }
+        if (e.target !== cityName.current && e.path[1] !== cityList) {
+            setInputState(false)
         }
     }
 
-    useEffect(() => {
-        window.addEventListener('click', inputBlurHandler)
-    }, [])
+    window.addEventListener('click', inputBlurHandler)
 
     return (
         <main id='main'>
@@ -96,7 +88,8 @@ const Weather = props => {
 
             </form>
 
-            {weatherDetails && weatherDetails.cod === 200 && <DetailedInfo data={weatherDetails} />}
+            {weatherDetails && weatherDetails.cod === 200 && <DetailedInfo
+                data={weatherDetails} />}
             {!weatherDetails && <img alt='current condition' className={classes.spinner} src={spinner} />}
             {weatherDetails && weatherDetails.cod !== 200 && <p className={classes.error}>{weatherDetails.message}</p>}
         </main>
