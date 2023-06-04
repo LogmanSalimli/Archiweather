@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Archiweather/static/css/main.53df443c.css",
-    "main.js": "/Archiweather/static/js/main.c4954dc6.js",
+    "main.css": "/Archiweather/static/css/main.ed0b1d4b.css",
+    "main.js": "/Archiweather/static/js/main.2faafde4.js",
     "static/media/spinner.gif": "/Archiweather/static/media/spinner.12014b482243a7d04fd9.gif",
     "index.html": "/Archiweather/index.html",
-    "main.53df443c.css.map": "/Archiweather/static/css/main.53df443c.css.map",
-    "main.c4954dc6.js.map": "/Archiweather/static/js/main.c4954dc6.js.map"
+    "main.ed0b1d4b.css.map": "/Archiweather/static/css/main.ed0b1d4b.css.map",
+    "main.2faafde4.js.map": "/Archiweather/static/js/main.2faafde4.js.map"
   },
   "entrypoints": [
-    "static/css/main.53df443c.css",
-    "static/js/main.c4954dc6.js"
+    "static/css/main.ed0b1d4b.css",
+    "static/js/main.2faafde4.js"
   ]
 }
